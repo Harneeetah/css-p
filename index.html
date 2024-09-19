@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <a href="#main" class="visually-hidden">Skip to main</a>
+<!-- fragement identifier -->
+<nav aria-label="Breadcrumbs">
+  <!--  role="list" was added back in because some CSS display property values remove the semantics from some elements.  -->
+  <ol id="top" role="list">
+    <li><a href="#">Ho<span>me</span></a></li>
+    <li><a href="/living">Living Room</a></li>
+    <li><a aria-current="page" href="/living/couch">Couches</a></li>
+    <li><a href="/living/couch/sectional">Sectional</a></li>
+  </ol>
+</nav>
+<main id="main">
+  Here is the main content
+
+  <footer>I'm at the bottom<span><a href="#top">Go to the Top</a></span></footer>
+</main>
+</body>
+</html>
